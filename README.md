@@ -27,7 +27,7 @@ plot profiles and calculate resolving power
 
 
 ### SNR
-``code.py``
+- ``code.py``
 
 Calculates the mean and stdev of the activity in each ROI defined in ROI_parameter_cylinder_between, using stir.
 The index runs on the number of iterations of the images.
@@ -38,14 +38,15 @@ Go in the directory where the reconstructed images are, create a new directory c
 
 e.g. ``list_ROI_values test_output_cylinder_between/text_tof10ps_%isignal%i reco_norm_tof10ps_0%i.hv ../ROI_parameter_cylinder_between/ROI_uniform_cylinder_s%i.par``
 
-``complete_evaluation.py``
+- ``complete_evaluation.py``
 Calculate SNR from the output files created with ``code.py``.
 
 Hardcoded things to set in code:
 ``for x1 in range(100, 113):``
 these are the lines in the .txt that you want to consider.
 
-# WORKFLOW
+
+# WORKFLOW for spatial resolution and resolving power
 
 Start from ``images.hv`` and ``images.v`` with different methods (no compton, efficiencies, average, maxenergy)
 
