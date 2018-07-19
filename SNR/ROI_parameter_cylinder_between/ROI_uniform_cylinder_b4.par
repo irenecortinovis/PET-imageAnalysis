@@ -1,0 +1,20 @@
+ROIValues Parameters :=
+  ; give the ROI an (optional) name. Defaults to the empty string.
+  ROI name := cylinder
+
+    ROI name := cylinder
+    number of samples to take for roi template-z := 20
+    number of samples to take for roi template-y := 20
+    number of samples to take for roi template-x := 20
+
+ROI shape type:= ellipsoidal cylinder
+Ellipsoidal Cylinder Parameters:=
+   radius-x (in mm):=5
+   radius-y (in mm):=5
+   length-z (in mm):=12.8
+   ;bkg
+   origin (in mm):={104,-17.3,-20}
+   END:=
+
+
+END:=
